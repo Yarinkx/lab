@@ -9,8 +9,8 @@ int count_bits(unsigned long x);
 int  main(){
     unsigned long i = 0;
         printf("\nPlease enter a  number: ");
-        scanf("%i",&i);
-        printf("\nthe even bits in the number:%i\n is :%d\n",i,count_bits(i));
+        scanf("%lu",&i);
+        printf("\nthe even bits in the number:%lu\n is :%d\n",i,count_bits(i));
     }
 
 int count_bits(unsigned long x){
