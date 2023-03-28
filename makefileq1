@@ -1,0 +1,2 @@
+myp1 : q1.c
+	gcc -g -Wall q1.c -o myq1
