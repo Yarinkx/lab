@@ -12,13 +12,13 @@ in the same index.
 found in string
  If its exists It will return its index
  if its not it will return a -1.
-
  */
 int my_strcmp(char first[], char second[]);
 
 int my_strncmp(char first[], char second[], int n);
 
 int my_strchr(char str[], char c);
+
 #define z  80
 
 int main() {
@@ -57,13 +57,14 @@ int main() {
     getchar();
     r = getchar();
     result = my_strchr(first, r);
-    printf("\nThe index of the character in the string '%s' is :%d", first, result);
-
+    printf("\nThe index of the character in the string '%s' is :%d\n", first, result);
+    return 0;
 }
 
 int my_strcmp(char first[], char second[]) {
     int i = 0;
-    while (first[i] != '\0' && second[i] != '\0') { /*while loop that running As long as we haven't reached to the end of the strings*/
+    while (first[i] != '\0' &&
+           second[i] != '\0') { /*while loop that running As long as we haven't reached to the end of the strings*/
         if (first[i] == second[i]) { /*if the character in the same location is the same character ,We will move on */
             i++;
         } else { /* If the condition is not happen We will return the difference between the characters*/
@@ -76,10 +77,12 @@ int my_strcmp(char first[], char second[]) {
 int my_strncmp(char first[], char second[], int n) {
     int i;
     for (i = 0; i < n; i++) { /*for loop that running from to n (that is the amount of variables to test)*/
-        if (first[i] != second[i]) {/*if the character in the same location ist the same character ,We will return the difference  */
+        if (first[i] !=
+            second[i]) {/*if the character in the same location ist the same character ,We will return the difference  */
             return first[i] - second[i];
         }
-        if (second[i] == '\0' && first[i] == '\0') {/*If we have reached the end of the array for both we will return the difference */
+        if (second[i] == '\0' &&
+            first[i] == '\0') {/*If we have reached the end of the array for both we will return the difference */
             return first[i] - second[i];
         }
     }
@@ -89,7 +92,8 @@ int my_strncmp(char first[], char second[], int n) {
 int my_strchr(char str[], char c) {
     int i;
     for (i = 0; str[i] != '\0'; i++) {/*for loop that going from the beginning of the string to the end of it*/
-        if (str[i] ==c) {/* Conditions that checks if the character we wanted is in a certain location in the string,If so,we will return its location*/
+        if (str[i] ==
+            c) {/* Conditions that checks if the character we wanted is in a certain location in the string,If so,we will return its location*/
             return i;
         }
     }
