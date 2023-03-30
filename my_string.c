@@ -19,33 +19,33 @@ int my_strncmp(char first[], char second[], int n);
 
 int my_strchr(char str[], char c);
 
-#define z  80
+#define SIZE  80
 
 int main() {
     /*Variables for the function my_strcmp */
-    char firstCmp[z] = "";
-    char secondCmp[z] = "";
+    char firstCmp[SIZE] = "";
+    char secondCmp[SIZE] = "";
 
     /*Variables for the function my_strncmp */
-    char firstNcmp[z] = "";
-    char secondNcmp[z] = "";
+    char firstNcmp[SIZE] = "";
+    char secondNcmp[SIZE] = "";
     char c;
 
     /*Variables for the function my_strchr */
-    char first[z] = "";
+    char first[SIZE] = "";
     char r;
     int result = 0;
 
     printf("Test for my_strcmp: \n");
     printf("Enter 2 String: \n");
-    fgets(firstCmp, z, stdin);
-    fgets(secondCmp, z, stdin);
+    fgets(firstCmp, SIZE, stdin);
+    fgets(secondCmp, SIZE, stdin);
     printf("\nThe difference is : %d \n", my_strcmp(firstCmp, secondCmp));
 
     printf("\nTest for my_strncmp: ");
     printf("\nEnter 2 Stirng: ");
-    fgets(firstNcmp, z, stdin);
-    fgets(secondNcmp, z, stdin);
+    fgets(firstNcmp, SIZE, stdin);
+    fgets(secondNcmp, SIZE, stdin);
     printf("\nEnter how  many characters to check :");
     c = (char) getchar();
     printf("\nThe difference is : '%d' \n", my_strncmp(firstNcmp, secondNcmp, c));
