@@ -37,7 +37,7 @@ int main() {
     int result = 0;
 
     printf("Test for my_strcmp: \n");
-    printf("Eneter 2 String: \n");
+    printf("Enter 2 String: \n");
     fgets(firstCmp, z, stdin);
     fgets(secondCmp, z, stdin);
     printf("\nThe difference is : %d \n", my_strcmp(firstCmp, secondCmp));
