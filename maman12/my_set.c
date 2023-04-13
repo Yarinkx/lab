@@ -68,7 +68,7 @@ int *get_set(int *pSize) {
 }
 
 int *remove_duplications(const int *arr, int counter, int *s) {
-    int *newArr = (int *) calloc(counter, sizeof(int));//New Aarr
+    int *newArr = (int *) calloc(counter, sizeof(int));/*New Aarr*/
     int j;
     int i;
     int Index = 0; /* Index for the numbers in the new array*/
