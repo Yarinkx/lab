@@ -1,19 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define ENLARGE_SIZE 10
+#include "had.h"
+
 
 /*
  * A program that will receive the list of values from the user, build the group from them, and finally print
 The members of the group in the order of their arrival.And without repetition
  */
 
-int *get_set(int *pSize);
 
-void set_print(int *arr, int size);
-
-int *remove_duplications(const int *arr, int counter, int *s);
-
-void printArray(int a[], int size);
 
 int main() {
     int c = 0;
@@ -62,7 +55,7 @@ int *get_set(int *pSize) {
     }
     printArray(p, i); /* print the array of unique numbers*/
     p = remove_duplications(q, i, pSize);/* A function that receives the array and removes all duplicates from it,
-    /* and returns a pointer to the array with only unique elements*/
+     and returns a pointer to the array with only unique elements*/
 
     return p;
 }
