@@ -52,13 +52,13 @@ int *get_set(int *pSize) {
         i++;
     }
     printArray(p, i); /* print the array of unique numbers*/
-    p = remove_duplications(q, i, pSize);/* A function that receives the array and removes all duplicates from it,
+    p = remove_Couples(q, i, pSize);/* A function that receives the array and removes all duplicates from it,
      and returns a pointer to the array with only unique elements*/
 
     return p;
 }
 
-int *remove_duplications(const int *arr, int counter, int *s) {
+int *remove_Couples(const int *arr, int counter, int *s) {
     int *newArr = (int *) calloc(counter, sizeof(int));/*New Aarr*/
     int j;
     int i;

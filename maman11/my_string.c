@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /*
  * This program Performs 3 functions:
 
