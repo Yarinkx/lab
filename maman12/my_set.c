@@ -1,11 +1,9 @@
 #include "had.h"
 
-
 /*
  * A program that will receive the list of values from the user, build the group from them, and finally print
 The members of the group in the order of their arrival.And without repetition
  */
-
 
 
 int main() {
