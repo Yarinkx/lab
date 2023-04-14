@@ -1,5 +1,5 @@
 #include "had.h"
-
+//212
 /*
  * A program that will receive the list of values from the user, build the group from them, and finally print
 The members of the group in the order of their arrival.And without repetition
@@ -88,7 +88,7 @@ int *remove_Couples(const int *arr, int counter, int *s) {
 /* Printing the new  array */
 void set_print(int *arr, int size) {
     int i;
-    printf("\n The new array is  :");
+    printf("\nThe new array is:");
     for (i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
