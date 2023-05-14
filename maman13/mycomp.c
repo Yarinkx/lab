@@ -3,7 +3,6 @@
  * author: Elad Shoshani */
 
 #include "input.h"
-
 /* A function that initializes the complex variables to a value of 0 + 0i */
 void initialize();
 
